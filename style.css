@@ -21,7 +21,7 @@ body{
     color:#4e48ee;
     width: 400%;
     word-wrap: break-word;
-    transform: rotate(-25deg) translateY(-600px);
+    transform: rotate(-25deg) translateY(-600px) translateX(-300px);
     line-height: 17.5px;
     font-size: 0.7rem;
     letter-spacing: 2px;
