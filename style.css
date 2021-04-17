@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: "Titillium Web", serif;
+    font-weight: 400;
+}
+html{
+    overflow-x: auto;
+    width:100%;
+}
+body{
+    background-color: #222;
+    display: grid;    
+    justify-content: left;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+#f{
+    color:#4e48ee;
+    width: 400%;
+    word-wrap: break-word;
+    transform: rotate(6.9420deg) translateY(-800px) translateX(-1690px);
+    line-height: 17.5px;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}
