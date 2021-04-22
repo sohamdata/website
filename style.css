@@ -3,6 +3,8 @@ body {
     background-color: #000000;
     width: 100%;
     overflow: hidden;
+    height: 100vh;
+    cursor: url('./images/cursor.png'), auto;
 }
 
 .container img {
