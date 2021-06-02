@@ -1,8 +1,8 @@
-const f = document.getElementById("f");
+const hy = document.getElementById("hy");
 
-let str = '';
+let content = '';
 
-for (i = 0; i < 30000; i++) {
-    str += ' What was your name again?';
+for (i = 0; i < 69420; i++) {
+    content += 'What was your name again? ';
 }
-f.innerHTML = str;
+hy.innerHTML = content;
