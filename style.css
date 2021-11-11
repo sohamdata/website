@@ -12,7 +12,7 @@ body {
     position:absolute;
     top: 50%;
     left: 30%;
-    transform: scale(2.4) translateX(-50px);
+    transform: scale(2.2) translateX(-50px);
     max-width: 100%;
     max-height: 100%;
 }

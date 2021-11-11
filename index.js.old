@@ -1,8 +1,0 @@
-const hy = document.getElementById("hy");
-
-let content = '';
-
-for (i = 0; i < 69420; i++) {
-    content += 'What was your name again? ';
-}
-hy.innerHTML = content;
