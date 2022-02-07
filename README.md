@@ -4,7 +4,7 @@ I made this website to teach myself and play around with HTML, CSS, Javascript, 
 
 [the guide](https://ai-scripting.docsforadobe.dev/), and yt videos like [this one](https://www.youtube.com/watch?v=EGdgrP7azUQ)
 
-it might take a couple seconds to load images.
+it might take couple seconds to load images.
 
 site looks ugly and annoying on mobile.  
 
