@@ -1,6 +1,21 @@
 var specialImage;
 var added = false;
 var images = [];
+var audio = new Audio('images/woah.mp3');
+audio.volume = 0.07;
+
+window.onload = function () {
+    console.log("loaded");
+    console.log("move mouse or tap to play if on mobile");
+    document.body.addEventListener("mousemove", function () {
+        audio.play()
+    });
+    document.body.addEventListener("touchmove", function () {
+        audio.play()
+    });
+}
+
+
 for (let i = 1; i <= 18; i++) {
     let image = document.getElementById("i" + i);
     if (image.complete) {
@@ -34,7 +49,7 @@ if (window.matchMedia("(pointer: coarse)").matches) {
         images[currentIndex].style.display = "none";
         currentIndex = (currentIndex + 1) % images.length
         images[currentIndex].style.display = "block";
-    }, 300);
+    }, 247);
 } else {
     var lastUpdate = new Date().getTime();
     var lastX = -1, lastY = -1;
