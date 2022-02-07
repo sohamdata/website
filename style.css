@@ -1,5 +1,6 @@
 body {
-    margin: 0px;
+    /* margin: 0%;
+    padding: 0%; */
     background-color: #000000;
     width: 100%;
     overflow: hidden;
@@ -7,12 +8,22 @@ body {
     cursor: url('./images/cursor.png'), auto;
 }
 
-.container img {
-    display: none;
+img {
     position:absolute;
-    top: 50%;
-    left: 30%;
-    transform: scale(2.2) translateX(-50px);
-    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    transform: scale(2.2) translateX(150px);
+    /* max-width: 100%; */
     max-height: 100%;
+}
+
+@media (max-width:500px){
+    img {
+        position:absolute;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0.5) translateX(150px);
+        /* max-width: 100%; */
+        max-height: 100%;
+    }
 }

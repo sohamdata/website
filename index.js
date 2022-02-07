@@ -34,7 +34,7 @@ if (window.matchMedia("(pointer: coarse)").matches) {
         images[currentIndex].style.display = "none";
         currentIndex = (currentIndex + 1) % images.length
         images[currentIndex].style.display = "block";
-    }, 114);
+    }, 300);
 } else {
     var lastUpdate = new Date().getTime();
     var lastX = -1, lastY = -1;
