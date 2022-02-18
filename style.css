@@ -1,6 +1,6 @@
 body {
-    /* margin: 0%;
-    padding: 0%; */
+    margin: 0%;
+    padding: 0%;
     background-color: #000000;
     width: 100%;
     overflow: hidden;
@@ -17,13 +17,9 @@ img {
     max-height: 100%;
 }
 
-@media (max-width:500px){
+@media (max-width:500px) {
     img {
-        position:absolute;
-        justify-content: center;
-        align-items: center;
-        transform: scale(0.5) translateX(150px);
-        /* max-width: 100%; */
-        max-height: 100%;
+        transform: translateY(150px);
+        max-width: 100%;
     }
 }

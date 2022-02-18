@@ -1,8 +1,8 @@
 var specialImage;
 var added = false;
 var images = [];
-var audio = new Audio('images/woah.mp3');
-audio.volume = 0.07;
+var audio = new Audio('images/woah.aac');
+audio.volume = 0.1;
 
 window.onload = function () {
     console.log("loaded");
