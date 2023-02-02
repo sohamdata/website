@@ -1,5 +1,5 @@
 const images = [];
-const audio = new Audio('images/woah.aac');
+const audio = new Audio('images/closer2.aac');
 audio.volume = 0.1;
 
 function isSafari() {
@@ -34,7 +34,7 @@ if (window.matchMedia('(pointer: coarse)').matches) {
         images[currentIndex].style.display = 'none';
         currentIndex = (currentIndex + 1) % images.length;
         images[currentIndex].style.display = 'block';
-    }, 182);
+    }, 343);
 } else {
     let lastUpdate = Date.now();
     let lastX = -1;
