@@ -12,8 +12,8 @@ window.onload = () => {
 
     console.log(isSafari() ? 'rich' : 'no starbucks for you');
 
-    document.body.addEventListener('mousemove', () => audio.play());
-    document.body.addEventListener('touchmove', () => audio.play());
+    document.body.addEventListener('click', () => audio.play());
+    document.body.addEventListener('touchstart', () => audio.play());
 };
 
 for (let i = 1; i <= 18; i++) {
