@@ -1,6 +1,6 @@
 const images = [];
-const audio = new Audio('images/closer2.aac');
-audio.volume = 0.1;
+const audio = new Audio('assets/closer2.aac');
+audio.volume = 0.2;
 
 function isSafari() {
     return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
