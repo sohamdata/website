@@ -18,8 +18,12 @@ img {
 }
 
 @media (max-width:500px) {
+    body {
+        overflow: hidden;
+    }
+
     img {
-        transform: translateY(150px);
+        transform: translateY(100px);
         max-width: 100%;
     }
 }

@@ -1,6 +1,36 @@
 const images = [];
-const audio = new Audio('assets/closer2.aac');
-audio.volume = 0.2;
+
+const songs = [
+    {
+        name: "Closer2",
+        file: "assets/music/closer2.aac",
+        bpm: 175
+    },
+    {
+        name: "Peaked",
+        file: "assets/music/peaked.aac",
+        bpm: 195
+    },
+    {
+        name: "Sci-Fi",
+        file: "assets/music/scifi.aac",
+        bpm: 94
+    }
+];
+
+let randomIndex = localStorage.getItem('audioIndex');
+if (randomIndex === null) {
+    randomIndex = Math.floor(Math.random() * songs.length);
+    localStorage.setItem('audioIndex', randomIndex);
+} else {
+    randomIndex = (parseInt(randomIndex) + 1) % songs.length;
+    localStorage.setItem('audioIndex', randomIndex);
+}
+
+const selectedSong = songs[randomIndex];
+const audio = new Audio(selectedSong.file);
+audio.volume = 0.3;
+console.log(`current song: ${selectedSong.name} (${selectedSong.bpm} bpm)`);
 
 function isSafari() {
     return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
@@ -9,11 +39,9 @@ function isSafari() {
 window.onload = () => {
     console.log('loaded');
     console.log('move mouse or tap to play if on mobile');
-
     console.log(isSafari() ? 'rich' : 'no starbucks for you');
 
-    document.body.addEventListener('click', () => audio.play());
-    document.body.addEventListener('touchstart', () => audio.play());
+    document.body.addEventListener('mousedown', () => audio.play());
 };
 
 for (let i = 1; i <= 18; i++) {
@@ -34,7 +62,7 @@ if (window.matchMedia('(pointer: coarse)').matches) {
         images[currentIndex].style.display = 'none';
         currentIndex = (currentIndex + 1) % images.length;
         images[currentIndex].style.display = 'block';
-    }, 343);
+    }, 60000 / selectedSong.bpm);
 } else {
     let lastUpdate = Date.now();
     let lastX = -1;
