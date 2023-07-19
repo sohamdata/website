@@ -1,4 +1,4 @@
-## [sohamdatta.ga](https://sohamdatta.ga/)
+## [sohamdata.github.io/website](https://sohamdata.github.io/website/)
 
 
 I made this website to teach myself and play around with:
