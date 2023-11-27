@@ -12,6 +12,11 @@ const songs = [
         bpm: 195
     },
     {
+        name: "Ego",
+        file: "assets/music/ego.aac",
+        bpm: 128
+    },
+    {
         name: "Sci-Fi",
         file: "assets/music/scifi.aac",
         bpm: 94
@@ -32,14 +37,10 @@ const audio = new Audio(selectedSong.file);
 audio.volume = 0.3;
 console.log(`current song: ${selectedSong.name} (${selectedSong.bpm} bpm)`);
 
-function isSafari() {
-    return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-}
 
 window.onload = () => {
     console.log('loaded');
     console.log('move mouse or tap to play if on mobile');
-    console.log(isSafari() ? 'rich' : 'no starbucks for you');
 
     document.body.addEventListener('mousedown', () => audio.play());
 };
@@ -50,12 +51,12 @@ for (let i = 1; i <= 18; i++) {
 }
 
 function load(image, index) {
-    if (index === 4) return;
     images.push(image);
     if (images.length === 1) image.style.display = 'block';
 }
 
-if (window.matchMedia('(pointer: coarse)').matches) {
+// if (window.matchMedia('(pointer: coarse)').matches) {
+if (1 === 1) {
     let currentIndex = 0;
     setInterval(() => {
         if (images.length === 0) return;
