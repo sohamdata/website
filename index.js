@@ -4,7 +4,7 @@ const songs = [
     {
         name: "Closer2",
         file: "assets/music/closer2.aac",
-        bpm: 175
+        bpm: 170.5
     },
     {
         name: "Peaked",
