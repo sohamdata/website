@@ -20,7 +20,17 @@ const songs = [
         name: "Sci-Fi",
         file: "assets/music/scifi.aac",
         bpm: 94
-    }
+    },
+    {
+        name: "StartEnd",
+        file: "assets/music/startend.aac",
+        bpm: 148
+    },
+    {
+        name: "Icarus",
+        file: "assets/music/icarus.aac",
+        bpm: 134
+    },
 ];
 
 let randomIndex = localStorage.getItem('audioIndex');
