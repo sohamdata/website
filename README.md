@@ -1,4 +1,4 @@
-## [sohamisa.live](https://sohamisa.live/)
+## [og website](https://sohamdata.github.io/website/)
 
 
 I made this website to teach myself and play around with:
@@ -14,3 +14,4 @@ I made this website to teach myself and play around with:
 [the guide](https://ai-scripting.docsforadobe.dev/), and yt videos like [this one](https://www.youtube.com/watch?v=EGdgrP7azUQ)
 
 ###### click on the screen when on the website
+
